@@ -1,0 +1,188 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background: none repeat scroll 0 0 transparent;border: 0 none;font-size: 100%;margin: 0;    outline: 0 none;padding: 0;vertical-align: baseline;}
+
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('font/OpenSans-Regular-webfont.eot');
+    src: url('font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Regular-webfont.woff') format('woff'),
+         url('font/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  color: #222;
+  text-align: center;
+  font-family: 'OpenSans';
+  background-image: url("../images/cream_pixels.png");
+  background-attachment: fixed;
+}
+.max-width{
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header{
+  padding: 180px 0;
+}
+  header a{
+    display: inline-block;
+  }
+    .logo{
+      height: 150px;
+    }
+
+  .punchline{
+    display: inline-block;
+    padding: 20px 0;
+    width: 197px;
+    text-align: right;
+    font-size: 1em;
+    color: #aaa;
+  }
+.section-projects{
+  padding:20px 0 150px;
+}
+  .project{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+    color: #fff;
+    background-color: #444;
+    box-shadow: 0 0 0 300px rgba(0,0,0,0) inset;
+    transition:box-shadow 400ms;
+  }
+    .project:hover,
+    .project:focus{
+      box-shadow: 0 0 0 300px rgba(0,0,0,0.9) inset;
+    }
+    .project-title{
+      position: absolute;
+      top: 100px;
+      left: 30px;
+      padding: 0 0 10px;
+      width: 240px;
+      font-size: 1.8em;
+      opacity: 0;
+      transition:opacity 400ms,top 400ms,box-shadow 400ms;
+    }
+      .project:hover .project-title,
+      .project:focus .project-title{
+        opacity: 1;
+        top: 40px;
+        box-shadow: 0 1px 0 0 rgba(255,255,255,0.2);
+      }
+    .project-decription{
+      position: absolute;
+      width: 220px;
+      left: 40px;
+      top: 60px;
+      text-align: justify;
+      font-size: 0.8em;
+      opacity: 0;
+      transition:opacity 400ms, top 400ms;
+      color: #ccc;
+    }
+      .project:hover .project-decription,
+      .project:focus .project-decription{
+        opacity: 1;
+        top: 100px;
+      }
+    .icon-link-ext{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+      text-decoration: none;
+      opacity: 0;
+      transition:opacity 400ms;
+    }
+      .project:hover .icon-link-ext,
+      .project:focus .icon-link-ext{
+        opacity: 0.5;
+        transition:opacity 200ms;
+      }
+      .project:hover .icon-link-ext:hover,
+      .project:focus .icon-link-ext:focus{
+        opacity: 1;
+      }
+
+
+.section-team{
+  padding: 100px 0;
+  background:rgba(0,0,0,0.1);
+  border: 1px solid #fff;
+  border-left: 0;
+  border-right: 0;
+}
+  .frog{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 30px;
+    border: 5px solid #fff;
+  }
+    .frog-description{
+      height: 100%;
+      width: 100%;
+      background:rgba(0,0,0,0.8);
+      opacity: 0;
+      transition:opacity 400ms;
+      color: #fff;
+    }
+    .frog:hover .frog-description,
+    .frog:focus .frog-description{
+      opacity: 1;
+    }
+      .frog-name{
+        font-size: 1em;
+        padding: 20px 0 10px;
+      }
+      .frog-spe{
+        font-size: 0.8em;
+        opacity: 0.8;
+      }
+      .frog-links{
+        padding: 10px 0 0;
+      }
+        .frog-links a{
+          font-size: 1.4em;
+          color: #fff;
+          text-decoration: none;
+          opacity: 0.5;
+          transition:opacity 200ms;
+        }
+        .frog-links a:hover,
+        .frog-links a:focus{
+          opacity: 1;
+        }
+
+
+footer{
+  padding: 80px 0;
+}
+  footer a{
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+  }
+      .github-logo{
+        height: 50px;
+        position: relative;
+      }
